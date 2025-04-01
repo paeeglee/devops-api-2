@@ -13,6 +13,6 @@ describe("Say hello to the world!", () => {
     const req = new Request("http://localhost?name=World");
     const res = await app.fetch(req);
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ message: "Hello World!!" });
+    expect(await res.json()).toEqual({ message: "Hello World!" });
   });
 });
